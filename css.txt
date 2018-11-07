@@ -1,0 +1,739 @@
+---------------------------------------------------------------------------------------
+1.1) пример
+
+<div id="container">
+  <div id="header">
+  </div>
+  <div id="navigation">
+  </div>
+  <div id="menu">
+  </div>
+  <div id="content">
+  </div>
+  <div id="footer">
+  </div>
+</div>
+
+body {
+  background: #f3f2f3;
+  color: #000000;
+  font-family: Trebuchet MS, Arial, Times New Roman;
+  font-size: 12px;
+}
+
+#container {
+  background: #FFFFFF;
+  margin: 30px auto;
+  width: 900px;
+  height: 1000px;
+}
+
+#header {
+  background: #838283;
+  height: 200px;
+  width: 900px;
+}
+
+#navigation {
+  background: #a2a2a2;
+  width: 900px;
+  height: 20px;
+}
+
+#menu {
+  background: #333333;
+  float: left;
+  width: 200px;
+  height: 600px;
+}
+
+#content {
+  background: #d2d0d2;
+  float: right;
+  width: 700px;
+  height: 600px;
+}
+
+#footer {
+  background: #838283;
+  height: 180px;
+  width: 900px;
+}
+---------------------------------------------------------------------------------------
+1.2) таблица
+
+<div class="wrap">
+  <div class="white">
+    <table>
+      <tr>
+        <td><img class="img-icon" src="../assets/img/11.png" alt="текст"></td>
+        <td>текст</td>
+      </tr>
+      <tr>
+        <td>текст</td>
+        <td><img class="img-icon" src="../assets/img/11.png" alt="текст"></td>
+      </tr>
+      <tr>
+        <td><img class="img-icon" src="../assets/img/11.png" alt="текст"></td>
+        <td>текст</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+table {
+  width: 100%;
+  height: 100%;
+  border: 3px dashed #312a22;
+}
+
+tr {
+  border: 3px dashed #645a4e;
+}
+
+td {
+  width: 50%;
+  text-align: center;
+  border: 3px dashed #645a4e;
+}
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.img-icon {
+  width: 50px;
+  height: 50px;
+}
+---------------------------------------------------------------------------------------
+1.3) недоделано inline-block
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.parent_container {
+  height: 33.3%;
+}
+
+.text {
+  display: inline-block;
+  border: 1px dashed #645a4e;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.image-icon {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  border: 1px dashed #645a4e;
+}
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="parent_container">
+      <div class="image-icon">asdasd</div>
+      <div class="text">asdasd</div>
+    </div>
+    <div class="parent_container">
+      <div class="text">asdasd</div>
+      <div class="image-icon">sdasda</div>
+    </div>
+    <div class="parent_container">
+      <div class="image-icon">asdasd</div>
+      <div class="text">asdasd</div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+1.4) float-margin
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.parent_container {
+  height: 33.3%;
+}
+
+.first-elem {
+  border: 1px dashed #645a4e;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.second-elem {
+  border: 1px dashed #645a4e;
+  margin-left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 35% 0 0 40%;
+}
+
+.sec {
+  margin: 40% 0 0 40%;
+}
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="parent_container">
+      <div class="first-elem"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="second-elem"><div class="sec">sadaasd</div></div>
+    </div>
+    <div class="parent_container">
+      <div class="first-elem"><div class="sec">sadaasd</div></div>
+      <div class="second-elem"><img src="../assets/img/11.png" alt="текст"></div>
+    </div>
+    <div class="parent_container">
+      <div class="first-elem"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="second-elem"><div class="sec">sadaasd</div></div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+1.5) table-cell
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.table {
+  display: table;
+  background-color: #d9edf7;
+  border-color: #3a87ad;
+  padding: 0;
+  height: 100%;
+}
+
+.row {
+  display: table-row;
+  background-color: #f2dede;
+  border-color: #b94a48;
+}
+
+.cell {
+  display: table-cell;
+  background-color: #fbeed5;
+  border: 1px dashed #645a4e;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cell img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="table">
+      <div class="row">
+        <div class="cell"><img src="../assets/img/11.png" alt="текст"></div>
+        <div class="cell">текст</div>
+      </div>
+      <div class="row">
+        <div class="cell">текст</div>
+        <div class="cell"><img src="../assets/img/11.png" alt="текст"></div>
+      </div>
+      <div class="row">
+        <div class="cell"><img src="../assets/img/11.png" alt="текст"></div>
+        <div class="cell">текст</div>
+      </div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+1.6) flex
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.parent_container {
+  display: flex;
+  height: 33.3%;
+  width: 100%;
+}
+
+.text {
+  border: 1px dashed #645a4e;
+  width: 50%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+.image-icon {
+  border: 1px dashed #645a4e;
+  width: 50%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="parent_container">
+      <div class="image-icon"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="text">asdasd</div>
+    </div>
+    <div class="parent_container">
+      <div class="text">asdasd</div>
+      <div class="image-icon"><img src="../assets/img/11.png" alt="текст"></div>
+    </div>
+    <div class="parent_container">
+      <div class="image-icon"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="text">asdasd</div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+1.7) grid
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.parent_container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33.3%);
+}
+
+.text {
+  border: 1px dashed #645a4e;
+  display: grid;
+}
+
+.text span {
+  justify-self: center;
+  align-self: center;
+}
+
+.image-icon {
+  border: 1px dashed #645a4e;
+  display: grid;
+}
+
+.image-icon img {
+  justify-self: center;
+  align-self: center;
+}
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="parent_container">
+      <div class="image-icon"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="text"><span>asdasd</span></div>
+      <div class="text"><span>asdasd</span></div>
+      <div class="image-icon"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="image-icon"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="text"><span>asdasd</span></div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+1.8) position
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.parent_container {
+  height: 33.3%;
+  position: relative;
+}
+
+.first-elem {
+  position: absolute;
+  border: 1px dashed #645a4e;
+  width: 50%;
+  height: 100%;
+  right:0;
+}
+
+.text {
+  position: relative;
+  margin: 40% 0 0 40%;
+}
+
+.second-elem {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left:0;
+  border: 1px dashed #645a4e;
+}
+
+img {
+  position: relative;
+  margin: 35% 0 0 40%;
+}
+
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="parent_container">
+      <div class="first-elem"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="second-elem"><div class="text">asdasd</div></div>
+    </div>
+    <div class="parent_container">
+      <div class="first-elem"><div class="text">asdasd</div></div>
+      <div class="second-elem"><img src="../assets/img/11.png" alt="текст"></div>
+    </div>
+    <div class="parent_container">
+      <div class="first-elem"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="second-elem"><div class="text">asdasd</div></div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+
+позиционирование
+
+.wrap {
+  padding: 10px;
+  height: 100%;
+  background: #e7e6d4;
+  border: 3px dashed #645a4e;
+}
+
+.white {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  background: #ffffff;
+}
+
+.parent_container {
+  height: 33.3%;
+  position: relative;
+}
+
+.first-elem {
+  position: absolute;
+  border: 1px dashed #645a4e;
+  width: 50%;
+  height: 100%;
+  right:0;
+}
+
+.text {
+  position: relative;
+  margin: 40% 0 0 40%;
+}
+
+.second-elem {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left:0;
+  border: 1px dashed #645a4e;
+}
+
+img {
+  position: relative;
+  margin: 35% 0 0 40%;
+}
+
+
+
+<div class="wrap">
+  <div class="white">
+    <div class="parent_container">
+      <div class="first-elem"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="second-elem"><div class="text">asdasd</div></div>
+    </div>
+    <div class="parent_container">
+      <div class="first-elem"><div class="text">asdasd</div></div>
+      <div class="second-elem"><img src="../assets/img/11.png" alt="текст"></div>
+    </div>
+    <div class="parent_container">
+      <div class="first-elem"><img src="../assets/img/11.png" alt="текст"></div>
+      <div class="second-elem"><div class="text">asdasd</div></div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+2.0) flex
+
+.content {
+  background: gray;
+  width: 25%;
+  height: 70%;
+  margin: auto;
+}
+
+.parent_container {
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+}
+
+.first-elem {
+  border: 1px dashed #645a4e;
+  width: 50%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+.second-elem {
+  border: 1px dashed #645a4e;
+  width: 50%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+.block {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+}
+
+.text {
+
+}
+
+
+<div class="content">
+  <div class="parent_container">
+    <div class="first-elem"><div class="block"></div></div>
+    <div class="second-elem"><span class="text">текст</span></div>
+  </div>
+  <div class="parent_container">
+    <div class="first-elem"><div class="block"></div></div>
+    <div class="second-elem"><span class="text">текст</span></div>
+  </div>
+  <div class="parent_container">
+    <div class="first-elem"><div class="block"></div></div>
+    <div class="second-elem"><span class="text">текст</span></div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+2.0) grid
+
+.content {
+  background: gray;
+  width: 25%;
+  height: 70%;
+  margin: auto;
+}
+
+.parent_container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33.3%);
+}
+
+.first-elem {
+  border: 1px dashed #645a4e;
+  display: grid;
+}
+
+.second-elem {
+  border: 1px dashed #645a4e;
+  display: grid;
+}
+
+.block {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  justify-self: center;
+  align-self: center;
+}
+
+.text {
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+<div class="content">
+  <div class="parent_container">
+    <div class="first-elem"><div class="block"></div></div>
+    <div class="second-elem"><span class="text">текст</span></div>
+    <div class="first-elem"><div class="block"></div></div>
+    <div class="second-elem"><span class="text">текст</span></div>
+    <div class="first-elem"><div class="block"></div></div>
+    <div class="second-elem"><span class="text">текст</span></div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+2.0) таблица
+
+.content {
+  background: gray;
+  width: 25%;
+  height: 70%;
+  margin: auto;
+}
+
+.table {
+  display: table;
+  background-color: #d9edf7;
+  border-color: #3a87ad;
+  padding: 0;
+  height: 100%;
+}
+
+.row {
+  display: table-row;
+  background-color: #f2dede;
+  border-color: #b94a48;
+}
+
+.cell {
+  display: table-cell;
+  background-color: #fbeed5;
+  border: 1px dashed #645a4e;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.block {
+  margin: auto;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+}
+
+
+
+<div class="content">
+  <div class="table">
+    <div class="row">
+      <div class="cell"><div class="block"></div></div>
+      <div class="cell"><span class="text">текст</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="text">текст</span></div>
+      <div class="cell"><div class="block"></div></div>
+    </div>
+    <div class="row">
+      <div class="cell"><div class="block"></div></div>
+      <div class="cell"><span class="text">текст</span></div>
+    </div>
+  </div>
+</div>
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
