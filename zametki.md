@@ -114,3 +114,9 @@ text-align: justify
 
 display-none 
 и туда код (сео)
+
+--------------------------------------------------------------------
+скрыть блок
+.organizations-questionnaire-content {
+    height: 100%;
+}
