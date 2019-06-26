@@ -40,6 +40,8 @@ border 1px solid transparent
 
 не забывай, что не только функции и onChanges, но и subscribe
 
+
+
 ----------------------------------------------------------
 history.pushstate
 
@@ -115,11 +117,38 @@ text-align: justify
 display-none 
 и туда код (сео)
 
+git commit --amend -m 'Новое сообщение'
+
+
+---------------------------------------------------------------------
+
+
+promise.all
+
+
+_-----------------------------------------------------------
+
+массив
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+
+
+-----------------------------------------------------------------
+
+/** stats **/
+
+
+------------------------------------------------------------------
+
+    this.idDisable$ = this.store.pipe(select(getLoadingApp));
+    // this.store.pipe(select(getLoadingApp)).subscribe((loading) => {
+    //   this.idDisable = loading;
+    // });
+    this.httpService.getMechants.subscribe(merchants => {
+      this.merchants = merchants;
+    });
+    
+    this.merchants$ = this.httpService.getMechants;
+
+[buiTabGroupItemDisabled]="idDisable$ | async"
+
 --------------------------------------------------------------------
-скрыть блок
-.organizations-questionnaire-content {
-    height: 100%;
-}
--------------------------------------------------------------------
-git commit --amend
-редактирование коммита
