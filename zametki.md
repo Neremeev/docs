@@ -152,3 +152,10 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ar
 [buiTabGroupItemDisabled]="idDisable$ | async"
 
 --------------------------------------------------------------------
+<div
+    :style="{'left': item.left + 'px'}"
+    v-for="item in viewItems" // index была проблема
+    :key="item.id" // index была проблема
+    class="image-slide"
+    :class="{'anim': anim}"
+>
