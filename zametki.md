@@ -159,3 +159,15 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ar
     class="image-slide"
     :class="{'anim': anim}"
 >
+
+---------------------------------------------------------------------
+
+set и map
+this.state.isToggle.has(index) ? newSetIsToggle.delete(index) : newSetIsToggle.add(index)
+<div>{isToggle.has(index) ? '-' : '+'} {field.category_name}</div>
+
+rest and spread
+
+obj keys
+
+---------------------------------------------------------------------
