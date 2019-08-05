@@ -177,3 +177,16 @@ obj keys
 кликаутсайд свг компоненты
 v-else
 вью слайде скролл и модалка
+
+---------------------------------------------------------------------
+
+.text {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;     /* fallback */
+   max-height: 32px;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+для текста переноса в несколько трок
